@@ -3059,8 +3059,20 @@ th.hide-for-touch {
   .providers__image--tek-bond {
     height: 70px; }
 
-.maps img[src*="*google4.png"] {
-  display: none; }
+#mapa {
+  height: 400px;
+  width: 100%; }
+
+.gm-style-iw * {
+  display: block;
+  width: 100%; }
+
+.gm-style-iw h4, .gm-style-iw p {
+  margin: 0;
+  padding: 0; }
+
+.gm-style-iw a {
+  color: #4272db; }
 
 .bg-color--gray {
   background-color: #e7e7e7; }
