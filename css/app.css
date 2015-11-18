@@ -3101,8 +3101,32 @@ th.hide-for-touch {
 .gm-style-iw a {
   color: #4272db; }
 
+.contact__items {
+  text-align: center;
+  margin-top: 1.5rem; }
+
+.contact__graphic {
+  display: inline-block;
+  height: 7rem;
+  width: 7rem;
+  background-color: #fff;
+  border-radius: 50%; }
+
+.contact__icon {
+  line-height: 7rem;
+  font-size: 3rem;
+  color: #A51E22; }
+
+.contact__text {
+  margin-top: 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.2rem; }
+
 .bg-color--gray {
   background-color: #e7e7e7; }
+.bg-color--red {
+  background-color: #A51E22; }
 .bg-image, .bg-image--front, .bg-image--hall {
   background-attachment: fixed;
   background-size: cover;
@@ -3112,6 +3136,9 @@ th.hide-for-touch {
     background-image: url(../img/front-red.jpg); }
   .bg-image--hall {
     background-image: url(../img/hall.jpg); }
+
+.text-color--white {
+  color: #fff; }
 
 @media only screen and (min-width: 40.0625em) {
   .valign-middle {

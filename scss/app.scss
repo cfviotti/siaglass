@@ -95,7 +95,7 @@
 			float: right;
 			transform: scaleX(-1);
 		}
-	
+
 		& .title__text{
 			float: right;
 			margin-left: 0;
@@ -220,13 +220,43 @@
     color: #4272db;
 }
 
-.bg {
+.contact__items {
+    text-align: center;
+    margin-top: 1.5rem;
+}
 
-		&-color {
-	 		&--gray {
-	 			background-color: #e7e7e7;
-	 		}
-		}
+.contact__graphic {
+    display: inline-block;
+    height: 7rem;
+    width: 7rem;
+    background-color: #fff;
+    border-radius: 50%;
+}
+
+.contact__icon {
+    line-height: 7rem;
+    font-size: 3rem;
+    color: #A51E22;
+}
+
+.contact__text {
+    margin-top: 1rem;
+    color: #fff;
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.bg {
+	&-color {
+
+ 		&--gray {
+ 			background-color: #e7e7e7;
+ 		}
+
+    &--red {
+      background-color: #A51E22;
+    }
+	}
 
  	&-image {
 
@@ -244,9 +274,19 @@
  			@extend .bg-image;
  			background-image: url(../img/hall.jpg);
  		}
- 		
+
  	}
 
+}
+
+.text {
+  &-color {
+
+    &--white {
+      color: #fff;
+    }
+
+  }
 }
 
 // Trumps
