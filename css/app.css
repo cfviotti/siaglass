@@ -2969,7 +2969,7 @@ th.hide-for-touch {
   text-align: center;
   transition: all 0.15s cubic-bezier(0.55, 0, 0.1, 1); }
   .is-sticky .main-nav {
-    background-color: #A51E22; }
+    background-color: #90251B; }
     .is-sticky .main-nav .main-nav__link {
       padding: 0.7rem 0.3rem; }
 
@@ -3040,7 +3040,7 @@ th.hide-for-touch {
       display: inline-block; } }
 
 .title__text {
-  color: #a51e22;
+  color: #90251B;
   background-color: white;
   font-weight: 600;
   font-size: 2.3125rem;
@@ -3098,7 +3098,7 @@ th.hide-for-touch {
   transition: all 0.15s ease-in;
   border-radius: 0px; }
   .providers__item:hover, .providers__item:focus {
-    border-color: #A51E22; }
+    border-color: #90251B; }
   .providers__item--disable-link {
     border-color: transparent !important; }
     .providers__item--disable-link .providers__link {
@@ -3141,7 +3141,7 @@ th.hide-for-touch {
 .contact__icon {
   line-height: 7rem;
   font-size: 3rem;
-  color: #A51E22; }
+  color: #90251B; }
 
 .contact__text {
   margin-top: 1rem;
@@ -3159,7 +3159,7 @@ th.hide-for-touch {
 .bg-color--gray {
   background-color: #e7e7e7; }
 .bg-color--red {
-  background-color: #A51E22; }
+  background-color: #90251B; }
 .bg-image, .bg-image--front, .bg-image--hall {
   background-attachment: fixed;
   background-size: cover;
