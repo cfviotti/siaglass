@@ -41,6 +41,35 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 400;
+src: local('Myriad Pro Regular'), url('../fonts/MYRIADPRO-REGULAR.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-stretch: condensed;
+font-weight: 400;
+src: local('Myriad Pro Condensed'), url('../fonts/MYRIADPRO-COND.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 600;
+src: local('Myriad Pro Semibold'), url('../fonts/MYRIADPRO-SEMIBOLD.woff') format('woff');
+}
+
+@font-face {
+font-family: 'Myriad Pro';
+font-style: normal;
+font-weight: 700;
+src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff');
+}
+
 .container {
   position: relative;
 }
@@ -56,7 +85,7 @@
       background-color: #90251B;
 
       & .main-nav__link {
-        padding: 0.7rem 0.3rem;
+        padding: 0.7rem 0.3rem 0.3rem;
       }
     }
 }
@@ -94,12 +123,13 @@
 }
 
 .main-nav__link {
-    padding: 0.7rem 0.3rem;
+    padding: 0.7rem 0.3rem 0.3rem;
     display: block;
     color: #fff;
-    transition: all 0.35s cubic-bezier(.55,0,.1,1);
-    font-weight: 300;
-    font-size: 1rem;
+    transition: all 0.35s cubic-bezier(0.55, 0, 0.1, 1);
+    font-weight: 400;
+    font-size: 1.2rem;
+    font-stretch: condensed;
 
     &:hover, &:focus {
       color: #fff;
@@ -152,13 +182,13 @@
 .title__text {
 	color: #90251B;
   background-color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: rem-calc(37);
   float: left;
   padding-right: 1rem;
   margin: 0;
   height: 40px;
-  line-height: 41px;
+  line-height: 48px;
   position: relative;
   z-index: 1;
   top: 50%;
@@ -281,7 +311,7 @@
 .contact__text {
     margin-top: 1rem;
     color: #fff;
-    font-weight: 600;
+    font-weight: 400;
     font-size: 1.2rem;
 }
 

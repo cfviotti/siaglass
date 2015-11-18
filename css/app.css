@@ -62,7 +62,7 @@ body {
   background: #fff;
   color: #222;
   cursor: auto;
-  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Myriad Pro", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.5;
@@ -434,7 +434,7 @@ button, .button {
   border-style: solid;
   border-width: 0;
   cursor: pointer;
-  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Myriad Pro", Helvetica, Roboto, Arial, sans-serif;
   font-weight: normal;
   line-height: normal;
   margin: 0 0 1.25rem;
@@ -2307,7 +2307,7 @@ p {
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
   color: #222222;
-  font-family: "Open Sans", Helvetica, Roboto, Arial, sans-serif;
+  font-family: "Myriad Pro", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
   line-height: 1.4;
@@ -2959,6 +2959,27 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Myriad Pro Regular"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"); }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-stretch: condensed;
+  font-weight: 400;
+  src: local("Myriad Pro Condensed"), url("../fonts/MYRIADPRO-COND.woff") format("woff"); }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 600;
+  src: local("Myriad Pro Semibold"), url("../fonts/MYRIADPRO-SEMIBOLD.woff") format("woff"); }
+@font-face {
+  font-family: 'Myriad Pro';
+  font-style: normal;
+  font-weight: 700;
+  src: local("Myriad Pro Bold"), url("../fonts/MYRIADPRO-BOLD.woff") format("woff"); }
 .container {
   position: relative; }
 
@@ -2971,7 +2992,7 @@ th.hide-for-touch {
   .is-sticky .main-nav {
     background-color: #90251B; }
     .is-sticky .main-nav .main-nav__link {
-      padding: 0.7rem 0.3rem; }
+      padding: 0.7rem 0.3rem 0.3rem; }
 
 .main-nav__menu {
   list-style: none;
@@ -2998,12 +3019,13 @@ th.hide-for-touch {
     width: 100%; }
 
 .main-nav__link {
-  padding: 0.7rem 0.3rem;
+  padding: 0.7rem 0.3rem 0.3rem;
   display: block;
   color: #fff;
   transition: all 0.35s cubic-bezier(0.55, 0, 0.1, 1);
-  font-weight: 300;
-  font-size: 1rem; }
+  font-weight: 400;
+  font-size: 1.2rem;
+  font-stretch: condensed; }
   .main-nav__link:hover, .main-nav__link:focus {
     color: #fff; }
 
@@ -3042,13 +3064,13 @@ th.hide-for-touch {
 .title__text {
   color: #90251B;
   background-color: white;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 2.3125rem;
   float: left;
   padding-right: 1rem;
   margin: 0;
   height: 40px;
-  line-height: 41px;
+  line-height: 48px;
   position: relative;
   z-index: 1;
   top: 50%;
@@ -3146,7 +3168,7 @@ th.hide-for-touch {
 .contact__text {
   margin-top: 1rem;
   color: #fff;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 1.2rem; }
 
 .contact__logo--by {
