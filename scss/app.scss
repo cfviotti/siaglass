@@ -88,6 +88,8 @@
 
 .section__title {
 
+  text-align: center;
+
 	&--right {
 		& .title__window{
 			float: right;
@@ -103,15 +105,13 @@
 
 	}
 }
-
-.column-content {
-  margin: 2rem 0;
-  max-width: 440px;
-}
-
 .title__container {
 	height: 100px;
 	overflow: hidden;
+  @media #{$small-only} {
+    height: 70px;
+    display: inline-block;
+  }
 }
 
 .title__text {
@@ -130,6 +130,10 @@
   transform: translateY(-50%);
   margin-left: -1.2rem;
   transition: all 0.3s ease-in-out;
+
+  @media #{$small-only} {
+    font-size: rem-calc(23);
+  }
 }
 
 .title__window {
@@ -148,6 +152,15 @@
 	overflow: hidden;
 	display: block;
 	transition: all 0.3s ease-in-out;
+
+  @media #{$small-only} {
+    display: none;
+  }
+}
+
+.column-content {
+  margin: 2rem 0;
+  max-width: 440px;
 }
 
 .section__text {
