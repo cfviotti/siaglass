@@ -2992,7 +2992,9 @@ th.hide-for-touch {
   height: 20rem; }
 
 .logo--front {
-  height: 200px; }
+  width: 400px;
+  max-width: 100%;
+  height: auto; }
 
 .section__title--right .title__window {
   float: right;
