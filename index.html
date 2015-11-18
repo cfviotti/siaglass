@@ -14,29 +14,6 @@
 
   <body>
 
-    <nav class="main-nav">
-      <ul class="main-nav__menu">
-        <li class="main-nav__item">
-          <a href="#home" class="main-nav__link">Home</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#produtos" class="main-nav__link">Produtos e Serviços</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#redes" class="main-nav__link">Redes</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#fornecedores" class="main-nav__link">Fornecedores</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#endereco" class="main-nav__link">Endereço</a>
-        </li>
-        <li class="main-nav__item">
-          <a href="#contato" class="main-nav__link">Contato</a>
-        </li>
-      </ul>
-    </nav>
-
     <section id="front" class="container front bg-image bg-image--front">
 
       <div class="row valign-middle">
@@ -46,6 +23,23 @@
       </div>
 
     </section>
+
+    <nav id="sticker" class="main-nav">
+      <ul class="main-nav__menu">
+        <li class="main-nav__item">
+          <a href="#home" class="main-nav__link">Missão</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#produtos" class="main-nav__link">Produtos e Serviços</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#fornecedores" class="main-nav__link">Fornecedores</a>
+        </li>
+        <li class="main-nav__item">
+          <a href="#contato" class="main-nav__link">Contato</a>
+        </li>
+      </ul>
+    </nav>
 
     <section id="home" class="container home pad">
 
@@ -230,8 +224,7 @@
 
     </div>
     -->
-
-    <section id="endereco" class="container address">
+    <section id="contato" class="container contact">
 
       <div class="row">
         <div class="section__title section__title--right columns small-12">
@@ -245,64 +238,51 @@
 
       <div id="mapa"></div>
 
-    </section>
+      <div class="container pad bg-color--red">
+        <div class="row">
+          <div class="columns small-12">
+            <ul class="contact__items small-block-grid-4">
+              <li class="contact__item contact__item--phone">
+                <div class="contact__graphic">
+                  <i class="contact__icon fa fa-phone"></i>
+                </div>
+                <div class="contact__text">
+                  <span>61 3233-3239</span>
+                </div>
+              </li>
+              <li class="contact__item contact__item--email">
+                <a class="contact__link" href="mailto:contato@siaglass.com.br">
+                  <div class="contact__graphic">
+                    <i class="contact__icon fa fa-envelope"></i>
+                  </div>
+                  <div class="contact__text">
+                    <span>contato@siaglass.com.br</span>
+                  </div>
+                </a>
+              </li>
+              <li class="contact__item contact__item--address">
+                <div class="contact__graphic">
+                  <i class="contact__icon fa fa-map-marker"></i>
+                </div>
+                <div class="contact__text">
+                  <span>Sia Trecho 03</span><br>
+                  <span>Lote 405/415</span><br>
+                  <span>71.200-030</span>
 
-
-    <section id="contato" class="container bg-color--red contact pad">
-      <!--
-      <div class="row"<div>
-        <div class="section__title columns small-12">
-          <div class="title__container">
-            <img class="title__window" src="img/title-window-red.png">
-            <h1 class="title__text text-color--white bg-color--red">Contato</h1>
-            <span class="title__line"></span>
+                </div>
+              </li>
+              <li class="contact__item contact__item--facebook">
+                <a href="https://www.facebook.com/siaglas" class="contact__link">
+                  <div class="contact__graphic">
+                    <i class="contact__icon fa fa-facebook"></i>
+                  </div>
+                  <div class="contact__text">
+                    <span>fb.com/siaglas</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
           </div>
-        </div>
-      </div>
-      -->
-      <div class="row valign-middle">
-        <div class="columns small-12">
-          <ul class="contact__items small-block-grid-4">
-            <li class="contact__item contact__item--phone">
-              <div class="contact__graphic">
-                <i class="contact__icon fa fa-phone"></i>
-              </div>
-              <div class="contact__text">
-                <span>61 3233-3239</span>
-              </div>
-            </li>
-            <li class="contact__item contact__item--email">
-              <a class="contact__link" href="mailto:contato@siaglass.com.br">
-                <div class="contact__graphic">
-                  <i class="contact__icon fa fa-envelope"></i>
-                </div>
-                <div class="contact__text">
-                  <span>contato@siaglass.com.br</span>
-                </div>
-              </a>
-            </li>
-            <li class="contact__item contact__item--address">
-              <div class="contact__graphic">
-                <i class="contact__icon fa fa-map-marker"></i>
-              </div>
-              <div class="contact__text">
-                <span>Sia Trecho 03</span><br>
-                <span>Lote 405/415</span><br>
-                <span>71.200-030</span>
-
-              </div>
-            </li>
-            <li class="contact__item contact__item--facebook">
-              <a href="https://www.facebook.com/siaglas" class="contact__link">
-                <div class="contact__graphic">
-                  <i class="contact__icon fa fa-facebook"></i>
-                </div>
-                <div class="contact__text">
-                  <span>fb.com/siaglas</span>
-                </div>
-              </a>
-            </li>
-          </ul>
         </div>
       </div>
       <div class="row">
@@ -316,6 +296,7 @@
     <script src="foundation/js/vendor/jquery.js"></script>
     <script src="foundation/js/foundation.min.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
+    <script src="scripts/jquery.sticky.js"></script>
     <script src='scripts/app.js'></script>
   </body>
 

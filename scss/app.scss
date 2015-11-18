@@ -46,33 +46,64 @@
 }
 
 .main-nav {
-    background-color: rgba(37, 37, 37, 0.75);
-    position: fixed;
+    background-color: #070707;
     width: 100%;
     z-index: 10;
+    text-align: center;
+    transition: all 0.15s cubic-bezier(.55,0,.1,1);
+
+    .is-sticky & {
+      background-color: #A51E22;
+
+      & .main-nav__link {
+        padding: 0.7rem 0.3rem;
+      }
+    }
 }
 
 .main-nav__menu {
     list-style: none;
     margin: 0;
     padding: 0;
+    text-transform: uppercase;
 }
 
 .main-nav__item {
+    position: relative;
     display: inline-block;
+    margin: 0 0.6rem;
+
+    &::after {
+      content: '';
+      position: absolute;
+      margin: auto;
+      left: 0;
+      right: 0;
+      top: 0;
+      width: 0;
+      height: 0.2rem;
+      background-color: #fff;
+      transition: all 0.3s cubic-bezier(.55,0,.1,1);
+    }
+
+    &:hover, &:focus, &.active {
+      &::after {
+        width: 100%;
+      }
+    }
 }
 
 .main-nav__link {
-    padding: 0.5rem 1rem;
+    padding: 0.7rem 0.3rem;
     display: block;
-    padding-top: 0.7rem;
-    color: white;
-    transition: all 0.2s ease-in;
-}
-
-.main-nav__link:hover {
-    background-color: rgba(165, 30, 34, 0.85);
     color: #fff;
+    transition: all 0.35s cubic-bezier(.55,0,.1,1);
+    font-weight: 300;
+    font-size: 1rem;
+
+    &:hover, &:focus {
+      color: #fff;
+    }
 }
 
 .front {
@@ -133,7 +164,7 @@
   top: 50%;
   transform: translateY(-50%);
   margin-left: -1.2rem;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s cubic-bezier(.55,0,.1,1);
 
   @media #{$small-only} {
     font-size: rem-calc(23);
@@ -155,7 +186,7 @@
 	border-bottom: 0.32rem dotted #C5C5C5;
 	overflow: hidden;
 	display: block;
-	transition: all 0.3s ease-in-out;
+	transition: all 0.3s cubic-bezier(.55,0,.1,1);
 
   @media #{$small-only} {
     display: none;
@@ -182,7 +213,7 @@
     transition: all 0.15s ease-in;
     border-radius: 0px;
 
-    &:hover {
+    &:hover, &:focus {
       border-color: #A51E22;
     }
 
@@ -208,7 +239,7 @@
 }
 
 #mapa {
-    height:400px;
+    height:450px;
     width:100%;
     margin-top: 4rem;
 }

@@ -1,5 +1,50 @@
 $(document).foundation();
 
+$(document).ready(function () {
+    $(document).on("scroll", onScroll);
+
+    $('.main-nav__link').on('click', function (e) {
+      e.preventDefault();
+      $(document).off("scroll");
+
+      $('.main-nav__item').each(function () {
+        $(this).removeClass('active');
+      })
+      $(this).parent('.main-nav__item').addClass('active');
+
+      var target = this.hash;
+      var navHeight = $('.main-nav').height();
+      $target = $(target);
+      $('html, body').stop().animate({
+        'scrollTop': $target.offset().top-navHeight+2
+      }, 1000, function () {
+        window.location.hash = target;
+        $(document).on("scroll", onScroll);
+      });
+    });
+  });
+
+  function onScroll(event){
+    var scrollPosition = $(document).scrollTop();
+    $('.main-nav__item').each(function () {
+      var currentLink = $(this);
+      var refElement = $(currentLink.children('.main-nav__link').attr("href"));
+      var navHeight = $('.main-nav').height();
+      if (refElement.position().top-navHeight+2 <= scrollPosition && refElement.position().top+navHeight-2 + refElement.height() > scrollPosition) {
+        $('.main-nav__item').removeClass("active");
+        currentLink.addClass("active");
+      }
+      else{
+        currentLink.removeClass("active");
+      }
+    });
+  }
+
+
+$(document).ready(function(){
+    $("#sticker").sticky({topSpacing:0});
+  });
+
 $(document).ready(function() {
   google.maps.event.addDomListener(window, 'load', init);
   var map;
