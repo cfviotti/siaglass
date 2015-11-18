@@ -254,10 +254,7 @@
 }
 
  	.pad {
- 	    padding: 3rem 0;
- 	    @media #{$small-only} {
- 	    	padding: 2rem 0;
- 	    }
+ 	    padding: 2rem 0;
  	}
 
   .header-unstyle {
