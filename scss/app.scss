@@ -85,7 +85,6 @@
 }
 
 .section__title {
-	margin-bottom: 2.5rem;
 
 	&--right {
 		& .title__window{
@@ -117,6 +116,7 @@
 	color: #a51e22;
   background-color: white;
   font-weight: 600;
+  font-size: rem-calc(37);
   float: left;
   padding-right: 1rem;
   margin: 0;
@@ -191,6 +191,7 @@
 #mapa {
     height:400px;
     width:100%;
+    margin: 2rem 0;
 }
 .gm-style-iw * {
     display: block;

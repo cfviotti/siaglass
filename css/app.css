@@ -2994,17 +2994,15 @@ th.hide-for-touch {
 .logo--front {
   height: 200px; }
 
-.section__title {
-  margin-bottom: 2.5rem; }
-  .section__title--right .title__window {
-    float: right;
-    transform: scaleX(-1); }
-  .section__title--right .title__text {
-    float: right;
-    margin-left: 0;
-    margin-right: -1.2rem;
-    padding-right: 0;
-    padding-left: 1rem; }
+.section__title--right .title__window {
+  float: right;
+  transform: scaleX(-1); }
+.section__title--right .title__text {
+  float: right;
+  margin-left: 0;
+  margin-right: -1.2rem;
+  padding-right: 0;
+  padding-left: 1rem; }
 
 .column-content {
   margin: 2rem 0;
@@ -3018,6 +3016,7 @@ th.hide-for-touch {
   color: #a51e22;
   background-color: white;
   font-weight: 600;
+  font-size: 2.3125rem;
   float: left;
   padding-right: 1rem;
   margin: 0;
@@ -3074,7 +3073,8 @@ th.hide-for-touch {
 
 #mapa {
   height: 400px;
-  width: 100%; }
+  width: 100%;
+  margin: 2rem 0; }
 
 .gm-style-iw * {
   display: block;
