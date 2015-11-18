@@ -2294,7 +2294,7 @@ p {
   font-size: 1rem;
   font-weight: normal;
   line-height: 1.6;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0;
   text-rendering: optimizeLegibility; }
   p.lead {
     font-size: 1.21875rem;
@@ -2384,7 +2384,7 @@ dl {
   font-size: 1rem;
   line-height: 1.6;
   list-style-position: outside;
-  margin-bottom: 1.25rem; }
+  margin-bottom: 0; }
 
 ul {
   margin-left: 1.1rem; }
@@ -2445,7 +2445,7 @@ abbr {
 
 /* Blockquotes */
 blockquote {
-  margin: 0 0 1.25rem;
+  margin: 0 0 0;
   padding: 0.5625rem 1.25rem 0 1.1875rem;
   border-left: 1px solid #DDDDDD; }
   blockquote cite {
