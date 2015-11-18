@@ -41,6 +41,10 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
 
+.container {
+  position: relative;
+}
+
 .main-nav {
     background-color: rgba(37, 37, 37, 0.75);
     position: fixed;
@@ -206,7 +210,7 @@
 #mapa {
     height:400px;
     width:100%;
-    margin: 2rem 0;
+    margin-top: 4rem;
 }
 .gm-style-iw * {
     display: block;
@@ -244,6 +248,14 @@
     color: #fff;
     font-weight: 600;
     font-size: 1.2rem;
+}
+
+.contact__logo--by {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  margin: 1rem;
 }
 
 .bg {

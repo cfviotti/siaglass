@@ -2959,6 +2959,9 @@ th.hide-for-touch {
 @media not print {
   .show-for-print {
     display: none !important; } }
+.container {
+  position: relative; }
+
 .main-nav {
   background-color: rgba(37, 37, 37, 0.75);
   position: fixed;
@@ -3088,7 +3091,7 @@ th.hide-for-touch {
 #mapa {
   height: 400px;
   width: 100%;
-  margin: 2rem 0; }
+  margin-top: 4rem; }
 
 .gm-style-iw * {
   display: block;
@@ -3122,6 +3125,13 @@ th.hide-for-touch {
   color: #fff;
   font-weight: 600;
   font-size: 1.2rem; }
+
+.contact__logo--by {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 130px;
+  margin: 1rem; }
 
 .bg-color--gray {
   background-color: #e7e7e7; }
