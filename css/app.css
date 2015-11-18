@@ -3050,7 +3050,16 @@ th.hide-for-touch {
 
 .providers__item {
   display: inline-block;
-  margin: 1.5rem; }
+  padding: 1.1rem;
+  border: 0.3rem solid transparent;
+  transition: all 0.15s ease-in;
+  border-radius: 0px; }
+  .providers__item:hover {
+    border-color: #A51E22; }
+  .providers__item--disable-link {
+    border-color: transparent !important; }
+    .providers__item--disable-link .providers__link {
+      cursor: default; }
 
 .providers__image {
   max-height: 145px; }

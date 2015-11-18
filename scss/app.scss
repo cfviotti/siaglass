@@ -153,7 +153,22 @@
 
 .providers__item {
     display: inline-block;
-    margin: 1.5rem;
+    padding: 1.1rem;
+    border: 0.3rem solid transparent;
+    transition: all 0.15s ease-in;
+    border-radius: 0px;
+
+    &:hover {
+      border-color: #A51E22;
+    }
+
+
+    &--disable-link {
+      border-color: transparent !important;
+      & .providers__link {
+        cursor: default;
+      }
+    }
 }
 
 .providers__image {
