@@ -3170,6 +3170,8 @@ th.hide-for-touch {
   color: #fff;
   font-weight: 400;
   font-size: 1.2rem; }
+  .contact__text a, .contact__text a:hover, .contact__text a:focus {
+    color: #fff; }
 
 .contact__logo--by {
   position: absolute;

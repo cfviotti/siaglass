@@ -313,6 +313,10 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
     color: #fff;
     font-weight: 400;
     font-size: 1.2rem;
+
+    & a, & a:hover, & a:focus {
+      color: #fff;
+    }
 }
 
 .contact__logo--by {
