@@ -94,7 +94,6 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
     list-style: none;
     margin: 0;
     padding: 0;
-    text-transform: uppercase;
 }
 
 .main-nav__item {
@@ -110,7 +109,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
       right: 0;
       top: 0;
       width: 0;
-      height: 0.2rem;
+      height: 0.15rem;
       background-color: #fff;
       transition: all 0.3s cubic-bezier(.55,0,.1,1);
     }
@@ -232,6 +231,57 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
   padding-top: 2rem;
 }
 
+.products__items {
+  font-size: 0;
+}
+
+.products__item {
+  position: relative;
+  height: 210px;
+  width: 210px;
+  display: inline-block;
+  background: url(../img/home-img.jpg) no-repeat;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer;
+}
+
+.products__title {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  line-height: 45px;
+  color: white;
+  background-color: #90251b;
+  font-stretch: condensed;
+  font-weight: 400;
+  transition: all 0.25s 0.15s cubic-bezier(0.55, 0, 0.1, 1);
+  height: 45px;
+}
+
+.products__item:hover .products__title {
+  height: 210px;
+  line-height: 210px;
+  background-color: rgba(144, 37, 27, 0.85);
+  transition: all 0.25s 0s cubic-bezier(0.55, 0, 0.1, 1);
+}
+
+.products__expand {
+    position: relative;
+    font-size: 2rem;
+    color: #fff;
+    top: 50%;
+    transition: all 0.3s 0s ease-in-out;
+    opacity: 0;
+}
+
+.products__item:hover .products__expand {
+    opacity: 1;
+    transition: all 0.3s 0.15s ease-in-out;
+}
+
 .section__text {
 	text-align: justify;
 }
@@ -243,12 +293,12 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 .providers__item {
     display: inline-block;
     padding: 1.1rem;
-    border: 0.3rem solid transparent;
+    border: 0.2rem solid transparent;
     transition: all 0.15s ease-in;
     border-radius: 0px;
 
     &:hover, &:focus {
-      border-color: #90251B;
+      border-color: #E9E9E9;
     }
 
 
@@ -273,9 +323,9 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 }
 
 #mapa {
-    height:450px;
+    height:400px;
     width:100%;
-    margin-top: 4rem;
+    margin-top: 2rem;
 }
 .gm-style-iw * {
     display: block;
@@ -287,6 +337,10 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 }
 .gm-style-iw a {
     color: #4272db;
+}
+
+.contact {
+    padding-top: 2rem;
 }
 
 .contact__items {
@@ -365,6 +419,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 
     &--white {
       color: #fff;
+      border-color: #fff;
     }
 
   }

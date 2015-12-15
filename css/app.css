@@ -60,7 +60,7 @@ body {
 
 body {
   background: #fff;
-  color: #222;
+  color: #6E727E;
   cursor: auto;
   font-family: "Myriad Pro", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
@@ -2306,7 +2306,7 @@ p {
 
 /* Default header styles */
 h1, h2, h3, h4, h5, h6 {
-  color: #222222;
+  color: #6E727E;
   font-family: "Myriad Pro", Helvetica, Roboto, Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -2315,7 +2315,7 @@ h1, h2, h3, h4, h5, h6 {
   margin-top: 0.2rem;
   text-rendering: optimizeLegibility; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
-    color: #6f6f6f;
+    color: #a0a3ac;
     font-size: 60%;
     line-height: 0; }
 
@@ -2339,7 +2339,7 @@ h6 {
 
 .subheader {
   line-height: 1.4;
-  color: #6f6f6f;
+  color: #a0a3ac;
   font-weight: normal;
   margin-top: 0.2rem;
   margin-bottom: 0.5rem; }
@@ -2435,7 +2435,7 @@ abbr,
 acronym {
   text-transform: uppercase;
   font-size: 90%;
-  color: #222;
+  color: #6E727E;
   cursor: help; }
 
 abbr {
@@ -2451,17 +2451,17 @@ blockquote {
   blockquote cite {
     display: block;
     font-size: 0.8125rem;
-    color: #555555; }
+    color: #8e929d; }
     blockquote cite:before {
       content: "\2014 \0020"; }
     blockquote cite a,
     blockquote cite a:visited {
-      color: #555555; }
+      color: #8e929d; }
 
 blockquote,
 blockquote p {
   line-height: 1.6;
-  color: #6f6f6f; }
+  color: #a0a3ac; }
 
 /* Microformats */
 .vcard {
@@ -2997,8 +2997,7 @@ th.hide-for-touch {
 .main-nav__menu {
   list-style: none;
   margin: 0;
-  padding: 0;
-  text-transform: uppercase; }
+  padding: 0; }
 
 .main-nav__item {
   position: relative;
@@ -3012,7 +3011,7 @@ th.hide-for-touch {
     right: 0;
     top: 0;
     width: 0;
-    height: 0.2rem;
+    height: 0.15rem;
     background-color: #fff;
     transition: all 0.3s cubic-bezier(0.55, 0, 0.1, 1); }
   .main-nav__item:hover::after, .main-nav__item:focus::after, .main-nav__item.active::after {
@@ -3107,6 +3106,51 @@ th.hide-for-touch {
 .products {
   padding-top: 2rem; }
 
+.products__items {
+  font-size: 0; }
+
+.products__item {
+  position: relative;
+  height: 210px;
+  width: 210px;
+  display: inline-block;
+  background: url(../img/home-img.jpg) no-repeat;
+  background-size: cover;
+  margin: 5px;
+  cursor: pointer; }
+
+.products__title {
+  font-size: 1.3rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  line-height: 45px;
+  color: white;
+  background-color: #90251b;
+  font-stretch: condensed;
+  font-weight: 400;
+  transition: all 0.25s 0.15s cubic-bezier(0.55, 0, 0.1, 1);
+  height: 45px; }
+
+.products__item:hover .products__title {
+  height: 210px;
+  line-height: 210px;
+  background-color: rgba(144, 37, 27, 0.85);
+  transition: all 0.25s 0s cubic-bezier(0.55, 0, 0.1, 1); }
+
+.products__expand {
+  position: relative;
+  font-size: 2rem;
+  color: #fff;
+  top: 50%;
+  transition: all 0.3s 0s ease-in-out;
+  opacity: 0; }
+
+.products__item:hover .products__expand {
+  opacity: 1;
+  transition: all 0.3s 0.15s ease-in-out; }
+
 .section__text {
   text-align: justify; }
 
@@ -3116,11 +3160,11 @@ th.hide-for-touch {
 .providers__item {
   display: inline-block;
   padding: 1.1rem;
-  border: 0.3rem solid transparent;
+  border: 0.2rem solid transparent;
   transition: all 0.15s ease-in;
   border-radius: 0px; }
   .providers__item:hover, .providers__item:focus {
-    border-color: #90251B; }
+    border-color: #E9E9E9; }
   .providers__item--disable-link {
     border-color: transparent !important; }
     .providers__item--disable-link .providers__link {
@@ -3134,9 +3178,9 @@ th.hide-for-touch {
     height: 70px; }
 
 #mapa {
-  height: 450px;
+  height: 400px;
   width: 100%;
-  margin-top: 4rem; }
+  margin-top: 2rem; }
 
 .gm-style-iw * {
   display: block;
@@ -3148,6 +3192,9 @@ th.hide-for-touch {
 
 .gm-style-iw a {
   color: #4272db; }
+
+.contact {
+  padding-top: 2rem; }
 
 .contact__items {
   text-align: center;
@@ -3195,7 +3242,8 @@ th.hide-for-touch {
     background-image: url(../img/hall.jpg); }
 
 .text-color--white {
-  color: #fff; }
+  color: #fff;
+  border-color: #fff; }
 
 @media only screen and (min-width: 40.0625em) {
   .valign-middle {
