@@ -79,7 +79,8 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
     width: 100%;
     z-index: 10;
     text-align: center;
-    transition: all 0.15s cubic-bezier(.55,0,.1,1);
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 1px 4px rgba(0, 0, 0, 0.23);
+    transition: all 0.3s cubic-bezier(.55,0,.1,1);
 
     .is-sticky & {
       background-color: #90251B;
@@ -212,7 +213,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 	top: -45%;
 	height: 100%;
 	width: auto;
-	border-bottom: 0.32rem dotted #C5C5C5;
+	border-bottom: 0.32rem dotted #E9E9E9;
 	overflow: hidden;
 	display: block;
 	transition: all 0.3s cubic-bezier(.55,0,.1,1);
@@ -240,10 +241,38 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
   height: 210px;
   width: 210px;
   display: inline-block;
-  background: url(../img/home-img.jpg) no-repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   margin: 5px;
   cursor: pointer;
+
+  &--pergolado {
+   background-image: url(../img/home-img.jpg);
+  }
+
+  &--sacada {
+   background-image: url(../img/kit-sacada.jpg);
+  }
+
+  &--vision {
+   background-image: url(../img/porta-vision.jpg);
+  }
+
+  &--elegance {
+   background-image: url(../img/box-elegance.jpg);
+  }
+
+  &:hover .products__title {
+    height: 210px;
+    line-height: 210px;
+    background-color: rgba(144, 37, 27, 0.85);
+    transition: all 0.25s 0s cubic-bezier(0.55, 0, 0.1, 1);
+  }
+
+  &:hover .products__expand {
+    opacity: 1;
+    transition: all 0.3s 0.15s ease-in-out;
+  }
 }
 
 .products__title {
@@ -259,13 +288,11 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
   font-weight: 400;
   transition: all 0.25s 0.15s cubic-bezier(0.55, 0, 0.1, 1);
   height: 45px;
+
 }
 
 .products__item:hover .products__title {
-  height: 210px;
-  line-height: 210px;
-  background-color: rgba(144, 37, 27, 0.85);
-  transition: all 0.25s 0s cubic-bezier(0.55, 0, 0.1, 1);
+
 }
 
 .products__expand {
@@ -278,8 +305,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 }
 
 .products__item:hover .products__expand {
-    opacity: 1;
-    transition: all 0.3s 0.15s ease-in-out;
+
 }
 
 .section__text {
@@ -359,7 +385,7 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 .contact__icon {
     line-height: 7rem;
     font-size: 3rem;
-    color: #90251B;
+    color: #fff;
 }
 
 .contact__text {
@@ -377,8 +403,15 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
   position: absolute;
   bottom: 0;
   right: 0;
-  width: 130px;
   margin: 1rem;
+}
+
+.contact__by {
+  color: white;
+  font-size: 0.6rem;
+  padding-right: 1.5rem;
+  position: relative;
+  bottom: 0px;
 }
 
 .bg {
@@ -420,6 +453,11 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
     &--white {
       color: #fff;
       border-color: #fff;
+    }
+
+    &--gray {
+      color: #C5C5C5;
+      border-color: #C5C5C5;
     }
 
   }

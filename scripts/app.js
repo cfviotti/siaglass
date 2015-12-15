@@ -1,5 +1,26 @@
 $(document).foundation();
 
+$('.modal-trigger').click(function () {
+    $(this).addClass('active');
+    var modalContent = $(this).find('.modal-content-trigger').children().clone();
+    $('.modal__content').html(modalContent);
+    var modalOffset = $(window).scrollTop() + 48;
+    $('.modal').css('top', modalOffset);
+    $('.modal').fadeIn();
+    $('.modal-bg').fadeIn();
+
+});
+
+$('.modal-close, .modal-bg').click(function (e) {
+    $('.modal-trigger.active').removeClass('active');
+    $('.modal-bg').fadeOut();
+    $('.modal').fadeOut(function(){
+    $('.modal__content').empty();
+    });
+    e.stopPropagation();
+
+});
+
 $(document).ready(function () {
     $(document).on("scroll", onScroll);
 
@@ -156,3 +177,4 @@ $(document).ready(function() {
     }
   }
 });
+

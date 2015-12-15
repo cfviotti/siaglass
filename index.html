@@ -10,6 +10,7 @@
     <link rel="shortcut icon" type="image/x-icon" href="./img/favicon.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="css/app.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.css"/>
     <title>SIAGLASS - Vidros, alumínios e ferragens</title>
   </head>
 
@@ -98,7 +99,7 @@
             <div class="title__container">
               <img class="title__window" src="img/title-window-gray.png">
               <h1 class="title__text bg-color--gray">Produtos e Serviços</h1>
-              <span class="title__line"></span>
+              <span class="title__line text-color--gray"></span>
             </div>
           </div>
         </div>
@@ -111,15 +112,15 @@
                 <span class="products__title">Pergolado de Vidro</span>
                 <span class="products__expand">+</span>
               </div>
-              <div class="products__item products__item--pergolado">
+              <div class="products__item products__item--sacada">
                 <span class="products__title">Kit Sacada</span>
                 <span class="products__expand">+</span>
               </div>
-              <div class="products__item products__item--pergolado">
+              <div class="products__item products__item--vision">
                 <span class="products__title">Porta Vision</span>
                 <span class="products__expand">+</span>
               </div>
-              <div class="products__item products__item--pergolado">
+              <div class="products__item products__item--elegance">
                 <span class="products__title">Box Elegance</span>
                 <span class="products__expand">+</span>
               </div>
@@ -261,53 +262,40 @@
       <div class="container pad bg-color--red">
         <div class="row">
           <div class="columns small-12">
-            <ul class="contact__items small-block-grid-1 medium-block-grid-2 large-block-grid-4">
-              <li class="contact__item contact__item--phone">
-                <div class="contact__graphic">
-                  <i class="contact__icon fa fa-phone"></i>
-                </div>
+            <div class="contact__items">
+              <div class="contact__item contact__item--phone">
                 <div class="contact__text">
-                  <a href="tel:6132333239" class="text-color--white">61 3233-3239</a><br>
+                  <i class="contact__icon fa fa-phone"></i>
+                  <a href="tel:6132333239" class="text-color--white">61 3233-3239</a>
                   <a href="tel:6133611151" class="text-color--white">61 3361-1151</a>
                 </div>
-              </li>
-              <li class="contact__item contact__item--email">
+              </div>
+              <div class="contact__item contact__item--email">
                 <a class="contact__link" href="mailto:contato@siaglass.com.br">
-                  <div class="contact__graphic">
-                    <i class="contact__icon fa fa-envelope"></i>
-                  </div>
                   <div class="contact__text">
-                    <span>contato@siaglass.com.br</span>
+                   <i class="contact__icon fa fa-envelope"></i><span>contato@siaglass.com.br</span>
                   </div>
                 </a>
-              </li>
-              <li class="contact__item contact__item--address">
-                <div class="contact__graphic">
-                  <i class="contact__icon fa fa-map-marker"></i>
-                </div>
+              </div>
+              <div class="contact__item contact__item--address">
                 <div class="contact__text">
-                  <span>Sia Trecho 03</span><br>
-                  <span>Lote 405/415</span><br>
-                  <span>71.200-030</span>
-
+                 <i class="contact__icon fa fa-map-marker"></i><span>Sia Trecho 03 Lote 405/415 - 71.200-030</span>
                 </div>
-              </li>
-              <li class="contact__item contact__item--facebook">
+              </div>
+              <div class="contact__item contact__item--facebook">
                 <a href="https://www.facebook.com/siaglas" target="_blank" class="contact__link">
-                  <div class="contact__graphic">
-                    <i class="contact__icon fa fa-facebook"></i>
-                  </div>
                   <div class="contact__text">
-                    <span>fb.com/siaglas</span>
+                    <i class="contact__icon fa fa-facebook"></i><span>fb.com/siaglas</span>
                   </div>
                 </a>
-              </li>
-            </ul>
+              </div>
+            </div>
           </div>
         </div>
       </div>
       <div class="row">
         <div class="contact__logo--by">
+        <span class="contact__by">Design By</span>
           <a href="http://www.agencia43.com.br/" target="_blank">
             <img class="logo-by" src="img/agencia43.png">
           </a>
@@ -316,6 +304,7 @@
     </section>
     <script src="foundation/js/vendor/jquery.js"></script>
     <script src="foundation/js/foundation.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.5.9/slick.min.js"></script>
     <script src='https://maps.googleapis.com/maps/api/js?key=&sensor=false&extension=.js'></script>
     <script src="scripts/jquery.sticky.js"></script>
     <script src='scripts/app.js'></script>
