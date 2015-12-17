@@ -3107,6 +3107,11 @@ th.hide-for-touch {
 .products {
   padding-top: 2rem; }
 
+.products__slider {
+  position: absolute;
+  left: 0;
+  top: 0; }
+
 .products__items {
   font-size: 0; }
 
@@ -3264,10 +3269,10 @@ th.hide-for-touch {
 @media only screen and (min-width: 40.0625em) {
   .valign-middle {
     display: table; }
-    .valign-middle > .columns {
+    .valign-middle .columns {
       display: table-cell;
       vertical-align: middle; }
-    .valign-middle > .columns, .valign-middle > [class*="column"] + [class*="column"]:last-child {
+    .valign-middle .columns, .valign-middle [class*="column"] + [class*="column"]:last-child {
       float: none; } }
 
 .pad {

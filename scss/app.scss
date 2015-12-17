@@ -232,6 +232,12 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
   padding-top: 2rem;
 }
 
+.products__slider {
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 .products__items {
   font-size: 0;
 }
@@ -469,12 +475,12 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 	@media #{$medium-up} {
 	    display: table;
 
-	    > .columns {
+	    & .columns {
 	        display: table-cell;
 	        vertical-align: middle;
 	    }
 
-	    > .columns, > [class*="column"] + [class*="column"]:last-child {
+	    & .columns, & [class*="column"] + [class*="column"]:last-child {
 	        float: none;
 	    }
 	}

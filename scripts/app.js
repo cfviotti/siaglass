@@ -1,5 +1,9 @@
 $(document).foundation();
 
+$(document).ready(function(){
+	$('.slick').slick();
+});
+
 $('.modal-trigger').click(function () {
     $(this).addClass('active');
     var modalContent = $(this).find('.modal-content-trigger').children().clone();
