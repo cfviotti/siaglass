@@ -9,7 +9,8 @@ $(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
     $('.slick').slick({
     	initialSlide: parseInt(slideIndex),
     	cssEase: 'cubic-bezier(.55,0,.1,0)',
-    	speed: 800
+    	speed: 800,
+      dots: true,
     });
 });
 

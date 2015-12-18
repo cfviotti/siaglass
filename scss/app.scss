@@ -315,21 +315,21 @@ src: local('Myriad Pro Bold'), url('../fonts/MYRIADPRO-BOLD.woff') format('woff'
 }
 
 // Hide images while Reveal fires
-.slick li {
+.slick .products__slide {
     opacity: 0;
 }
 
-.slick li.slick-active{
+.slick .products__slide.slick-active{
     opacity: 1;
     transition: all 1s 0.6s cubic-bezier(.55,0,.1,1);
 }
 
-.slick li:not(:first-child) {
+.slick .products__slide:not(:first-child) {
     display: none;
 }
 
 // Display images after Reveal fires
-.slick-track li:not(:first-child) {
+.slick-track .products__slide:not(:first-child) {
     display: block;
 }
 

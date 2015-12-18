@@ -2033,7 +2033,7 @@ label.error {
   z-index: 1005;
   left: 0;
   background-color: #FFFFFF;
-  padding: 0;
+  padding: 1.875rem;
   border: solid 0 #666666;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.4); }
   @media only screen and (max-width: 40em) {
@@ -3164,17 +3164,17 @@ th.hide-for-touch {
 .products__slide {
   transition: all 0.8s 0s cubic-bezier(0.55, 0, 0.1, 1); }
 
-.slick li {
+.slick .products__slide {
   opacity: 0; }
 
-.slick li.slick-active {
+.slick .products__slide.slick-active {
   opacity: 1;
   transition: all 1s 0.6s cubic-bezier(0.55, 0, 0.1, 1); }
 
-.slick li:not(:first-child) {
+.slick .products__slide:not(:first-child) {
   display: none; }
 
-.slick-track li:not(:first-child) {
+.slick-track .products__slide:not(:first-child) {
   display: block; }
 
 .slide__title-container::after {
