@@ -1,4 +1,18 @@
 /* Slider */
+
+.slick
+{
+ margin: 0;
+ transition: 0.8s cubic-bezier(.55,0,.1,1);
+ opacity: 0;
+}
+
+.slick.slick-initialized
+{
+ opacity: 1;
+}
+
+
 .slick-slider
 {
     position: relative;
@@ -116,4 +130,17 @@
 }
 .slick-arrow.slick-hidden {
     display: none;
+}
+
+.slick-arrow {
+    position: absolute;
+    z-index: 5;
+}
+
+.slick-prev {
+    left: 0;
+}
+
+.slick-next {
+    right: 0;
 }

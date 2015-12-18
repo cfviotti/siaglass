@@ -1131,10 +1131,10 @@ $include-html-global-classes: $include-html-classes;
 
 // We use these to control the style of the modal itself.
 // $reveal-modal-bg: $white;
-// $reveal-position-top: rem-calc(100);
+   $reveal-position-top: 300px;
 // $reveal-default-width: 80%;
 // $reveal-max-width: $row-width;
-// $reveal-modal-padding: rem-calc(20);
+   $reveal-modal-padding: 0;
 // $reveal-box-shadow: 0 0 10px rgba($black,.4);
 
 // We use these to style the reveal close button
@@ -1145,12 +1145,12 @@ $include-html-global-classes: $include-html-classes;
 // $reveal-close-weight: $font-weight-bold;
 
 // We use this to set the default radius used throughout the core.
-// $reveal-radius: $global-radius;
+   $reveal-radius: 0;
 // $reveal-round: $global-rounded;
 
 // We use these to control the modal border
 // $reveal-border-style: solid;
-// $reveal-border-width: 1px;
+   $reveal-border-width: 0;
 // $reveal-border-color: $steel;
 
 // $reveal-modal-class: "reveal-modal";

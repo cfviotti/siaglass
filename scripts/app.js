@@ -1,7 +1,23 @@
 $(document).foundation();
 
-$(document).ready(function(){
-	$('.slick').slick();
+$(".products__item").click(function(){
+    slideIndex = $(this).index();
+});
+
+$(document).on('opened.fndtn.reveal', '[data-reveal]', function () {
+    var modal = $(this);
+    $('.slick').slick({
+    	initialSlide: parseInt(slideIndex),
+    	cssEase: 'cubic-bezier(.55,0,.1,0)',
+    	speed: 800
+    });
+});
+
+
+
+$(document).on('closed.fndtn.reveal', '[data-reveal]', function () {
+    var modal = $(this);
+    $('.slick').slick('unslick');
 });
 
 $('.modal-trigger').click(function () {
