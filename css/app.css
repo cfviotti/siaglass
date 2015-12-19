@@ -3041,6 +3041,11 @@ th.hide-for-touch {
   max-width: 100%;
   height: auto; }
 
+.logo--footer {
+  width: 300px;
+  max-width: 100%;
+  height: auto; }
+
 .section__title {
   text-align: center; }
   .section__title--right .title__window {
@@ -3110,7 +3115,16 @@ th.hide-for-touch {
 .products__slider {
   position: absolute;
   left: 0;
-  top: 0; }
+  top: 0;
+  margin-top: 4.5rem;
+  padding-bottom: 3rem; }
+  @media only screen and (max-width: 40em) {
+    .products__slider {
+      right: 0;
+      left: 0;
+      width: 90%;
+      padding: 0;
+      padding-top: 3rem; } }
 
 .products__items {
   font-size: 0; }
@@ -3176,6 +3190,16 @@ th.hide-for-touch {
 
 .slick-track .products__slide:not(:first-child) {
   display: block; }
+
+@media only screen and (max-width: 40em) {
+  .slick-arrow {
+    bottom: initial;
+    top: -2.05rem; } }
+
+@media only screen and (max-width: 40em) {
+  .slick-dots {
+    bottom: initial;
+    top: -1.05rem; } }
 
 .slide__title-container::after {
   content: '';
@@ -3243,9 +3267,8 @@ th.hide-for-touch {
 .contact {
   padding-top: 2rem; }
 
-.contact__items {
-  text-align: center;
-  margin-top: 3rem; }
+.contact__item {
+  margin: 2rem 0; }
 
 .contact__graphic {
   display: inline-block;
@@ -3255,12 +3278,17 @@ th.hide-for-touch {
   border-radius: 50%; }
 
 .contact__icon {
-  line-height: 7rem;
-  font-size: 3rem;
-  color: #fff; }
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 2rem;
+  color: #fff;
+  width: 2.5rem;
+  margin-right: 1rem;
+  text-align: center; }
 
 .contact__text {
-  margin-top: 1rem;
+  display: inline-block;
+  vertical-align: middle;
   color: #fff;
   font-weight: 400;
   font-size: 1.2rem; }
@@ -3276,7 +3304,7 @@ th.hide-for-touch {
 .contact__by {
   color: white;
   font-size: 0.6rem;
-  padding-right: 1.5rem;
+  padding-right: 0.3rem;
   position: relative;
   bottom: 0px; }
 
